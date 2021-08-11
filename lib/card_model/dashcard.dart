@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 import 'dashmodel.dart';
 
@@ -44,9 +43,6 @@ class DashCard extends StatelessWidget {
         child: GridView.builder(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
-            mainAxisExtent: 235,
-            childAspectRatio: MediaQuery.of(context).size.width /
-                (MediaQuery.of(context).size.height / 1.7),
           ),
           itemBuilder: (context, position) {
             return Container(
